@@ -16,7 +16,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	m = n % 10;
+	int m = n % 10;
 	char *s1 = "Last digit of ";
 	char *s2 = " is ";
 	char *s3 = " and is grater than 5\n";

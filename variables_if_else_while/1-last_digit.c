@@ -23,11 +23,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	m = n % 10;
-	s1 = "Last digit of ";
-	s2 = " is ";
-	s3 = " and is grater than 5\n";
-	s4 = " and is 0\n";
-	s5 = " and is less than 6 and not 0\n";
+	s1 = "Last digit of";
+	s2 = "is";
+	s3 = "and is grater than 5\n";
+	s4 = "and is 0\n";
+	s5 = "and is less than 6 and not 0\n";
 
 	if (m > 5)
 	{

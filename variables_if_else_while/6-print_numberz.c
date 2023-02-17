@@ -9,14 +9,10 @@ int main(void)
 {
 	/* var declaration */
 	int i;
-	char c;
 
 	/* code */
 	for (i = 0; i < 10; i++)
-	{
-		c = (char)(i + '0');
-		putchar(c);
-	}
+		putchar(((char)(i + '0')));
 	putchar('\n');
 	return (0);
 }

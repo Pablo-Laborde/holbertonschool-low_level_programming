@@ -12,5 +12,5 @@ void times_table(void);
 int add(int n, int m);
 void print_to_98(int n);
 void print_number(int n);
-int pot(int n);
-int one_zero(int k);
+int ln(int n);
+int base_ten(int k);

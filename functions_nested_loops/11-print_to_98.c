@@ -66,7 +66,7 @@ int ln(int n)
 
 	/* code */
 	length = 0;
-	while (n > 10)
+	while (n > 9)
 	{
 		length++;
 		n /= 10;

@@ -30,10 +30,9 @@ void print_to_98(int n)
 void print_number(int n)
 {
 	/* var declaration */
-	int length, aux;
+	int length;
 
 	/* code */
-	aux = n;
 	length = pot(n);
 	if (n < 0)
 		_putchar('-');

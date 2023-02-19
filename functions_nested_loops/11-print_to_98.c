@@ -12,6 +12,8 @@ void print_to_98(int n)
 	/* code */
 	do {
 		print_number(n);
+		_putchar(',');
+		_putchar(' ');
 		if (n < 98)
 			n++;
 		else
@@ -30,43 +32,54 @@ void print_to_98(int n)
 void print_number(int n)
 {
 	/* var declaration */
-	int length;
+	int length, bt;
 
 	/* code */
-	length = pot(n);
+	length = ln(n);
 	if (n < 0)
+	{
 		_putchar('-');
+		n *= -1;
+	}
 	while (length > 0)
 	{
-		_putchar((n / one_zero(length)) + '0');
-		n %= one_zero(length);
+		bt = base_ten(length);
+		_putchar(n / bt) + '0');
+		n %= bt;
 		length--;
 	}
 }
 
 /**
- * pot- recursion to calculate the length
+ * ln- to calculate the length
  *
  * @n: passed to calculate the length
  *
  * Return: length
  */
-int pot(int n)
+int ln(int n)
 {
-	if ((n / 10) == 0)
-		return (1);
-	else
-		return (1 + pot(n / 10));
+	/* var declaration */
+	int length;
+
+	/* code */
+	length = 0;
+	while (n > 10)
+	{
+		length++;
+		n /= 10;
+	}
+	return (length + 1);
 }
 
 /**
- * one_zero- does 10 power to k
+ * base_ten- does 10^k
  *
- * @k: is the value
+ * @k: is the value (must be positive, function won't check)
  *
- * Return: 10 power k
+ * Return: 10^k
  */
-int one_zero(int k)
+int base_ten(int k)
 {
 	if (k == 0)
 		return (1);

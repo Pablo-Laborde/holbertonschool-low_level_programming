@@ -20,7 +20,7 @@ void jack_bauer(void)
 		_putchar((hh % 10) + '0');
 		_putchar(':');
 		_putchar((min / 10) + '0');
-		_putchar((min / 10) + '0');
+		_putchar((min % 10) + '0');
 		_putchar('\n');
 		if (min < 60)
 			min++;

@@ -3,7 +3,9 @@
 /**
  * _islower- checks if the char is lowercase
  *
- * @'c'- is  value given to check if the char is lower or not
+ * @c: passed by main
+ *
+ * Description: 'c' passed
  *
  * Return: 1 if is lower, else 0
  */

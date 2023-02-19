@@ -56,7 +56,7 @@ int pot(int n)
 	if ((n / 10) == 0)
 		return (1);
 	else
-		return (pot(n / 10));
+		return (1 + pot(n / 10));
 }
 
 /**

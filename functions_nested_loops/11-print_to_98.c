@@ -37,12 +37,12 @@ void print_number(int n)
 	int length, bt;
 
 	/* code */
-	length = ln(n);
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
 	}
+	length = ln(n);
 	while (length > 0)
 	{
 		bt = base_ten(length - 1);

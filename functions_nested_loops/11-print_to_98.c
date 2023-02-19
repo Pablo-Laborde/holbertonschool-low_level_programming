@@ -34,19 +34,45 @@ void print_number(int n)
 
 	/* code */
 	aux = n;
-	length = 0;
-	while (aux != 0)
-	{
-		length++;
-		aux /= 10;
-	}
+	length = pot(n);
 	if (n < 0)
 		_putchar('-');
-	while (length > 1)
+	while (length > 0)
 	{
-		_putchar((n / (10 ** length)) + '0');
-		n %= (10 ** length);
+		_putchar((n / one_zero(length)) + '0');
+		n %= one_zero(length);
 		length--;
 	}
-	_putchar((n % 10) + '0');
+}
+
+/**
+ * pot- recursion to calculate the length
+ *
+ * @n: passed to calculate the length
+ *
+ * Return: length
+ */
+int pot(int n)
+{
+	if ((n / 10) == 0)
+		return (1);
+	else
+		return (pot(n / 10));
+}
+
+/**
+ * one_zero- does 10 power to k
+ *
+ * @k: is the value
+ *
+ * Return: 10 power k
+ */
+int one_zero(int k)
+{
+	if (k == 0)
+		return (1);
+	else if (k == 1)
+		return (10);
+	else
+		return (10 * one_zero(k - 1));
 }

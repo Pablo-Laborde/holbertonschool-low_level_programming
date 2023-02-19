@@ -10,7 +10,8 @@
 void print_to_98(int n)
 {
 	/* code */
-	do {
+	while (n != 98)
+	{
 		print_number(n);
 		_putchar(',');
 		_putchar(' ');
@@ -18,7 +19,8 @@ void print_to_98(int n)
 			n++;
 		else
 			n--;
-	} while (n != 98);
+	}
+	print_number(n);
 	_putchar('\n');
 }
 

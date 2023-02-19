@@ -43,7 +43,7 @@ void print_number(int n)
 	}
 	while (length > 0)
 	{
-		bt = base_ten(length);
+		bt = base_ten(length - 1);
 		_putchar((n / bt) + '0');
 		n %= bt;
 		length--;

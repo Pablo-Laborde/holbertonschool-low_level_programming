@@ -44,7 +44,7 @@ void print_number(int n)
 	while (length > 0)
 	{
 		bt = base_ten(length);
-		_putchar(n / bt) + '0');
+		_putchar((n / bt) + '0');
 		n %= bt;
 		length--;
 	}
@@ -86,5 +86,5 @@ int base_ten(int k)
 	else if (k == 1)
 		return (10);
 	else
-		return (10 * one_zero(k - 1));
+		return (10 * base_ten(k - 1));
 }

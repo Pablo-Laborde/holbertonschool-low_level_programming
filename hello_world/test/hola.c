@@ -1,2 +1,0 @@
-
-funciona mal. falso

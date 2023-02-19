@@ -16,7 +16,7 @@ void times_table(void)
 	while (i < 10 && j < 10)
 	{
 		k = i * j;
-		if (j > 0 && j < 9)
+		if (j > 0 && j < 10)
 		{
 			_putchar(',');
 			y = (k < 10) ? 2 : 1;

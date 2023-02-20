@@ -1,7 +1,14 @@
 #include <stdio.h>
 
+
+
+
+
+void print_number(int n);
+
 /**
  * main- prints all possible combinations of two numbers od two digits each
+ *
  *
  * Return: 0 always
  */
@@ -16,17 +23,9 @@ int main(void)
 		{
 			if (i < j)
 			{
-				if (i < 10)
-					putchar('0');
-				else
-					putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
+				print_number(i);
 				putchar(' ');
-				if (j < 10)
-					putchar('0');
-				else
-					putchar((j / 10) + '0');
-				putchar((j % 10) + '0');
+				print_number(j);
 				if ((i + 2) != max)
 				{
 					putchar(',');
@@ -34,5 +33,22 @@ int main(void)
 				}
 			}
 		}
+	putchar('\n');
 	return (0);
+}
+
+/**
+ * print_number- prints a number
+ *
+ * @n: variable passed
+ *
+ * Return: void
+ */
+void print_number(int n)
+{
+	if (n < 10)
+		putchar('0');
+	else
+		putchar((n / 10) + '0');
+	putchar((n % 10) + '0');
 }

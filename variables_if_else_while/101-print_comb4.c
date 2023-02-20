@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* var declaration */
-	int i, j ,k, max;
+	int i, j, k, max;
 
 	/* code */
 	max = 10;

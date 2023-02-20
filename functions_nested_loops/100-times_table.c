@@ -26,13 +26,11 @@ void print_times_table(int n)
 				k = i * j;
 				if (j == 0)
 					print_num(k);
-				else if (j > 0 && j < n)
+				else
 				{
 					print_comaspace(k);
 					print_num(k);
 				}
-				else
-					print_num(k);
 			}
 			putchar('\n');
 		}

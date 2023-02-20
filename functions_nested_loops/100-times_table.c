@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-void print_number(int n);
+void print_num(int n);
 void print_comaspace(int n);
 
 /**
@@ -24,27 +24,27 @@ void print_times_table(int n)
 			{
 				k = i * j;
 				if (j == 0)
-					print_number(k);
+					print_num(k);
 				else if (j > 0 && j < n)
 				{
 					print_comaspace(k);
-					print_number(k);
+					print_num(k);
 				}
 				else
-					print_number(k);
+					print_num(k);
 			}
 		putchar('\n');
 	}
 }
 
 /**
- * print_number- prints number
+ * print_num- prints number
  *
  * @n: passed
  *
  * Return: void
  */
-void print_number(int n)
+void print_num(int n)
 {
 	if (n < 10)
 		putchar(n + '0');

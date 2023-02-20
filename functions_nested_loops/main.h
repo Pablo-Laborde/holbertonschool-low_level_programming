@@ -14,3 +14,6 @@ void print_to_98(int n);
 void print_number(int n);
 int ln(int n);
 int base_ten(int k);
+void print_times_table(int n);
+void print_num(int n);
+void print_comaspace(int n);

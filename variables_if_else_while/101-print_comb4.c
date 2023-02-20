@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * mian- prints all combinations possibles fo 3 digits
+ * main- prints all combinations possibles fo 3 digits
  *
  * Return: 0 always
  */

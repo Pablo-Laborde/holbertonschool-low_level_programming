@@ -8,16 +8,16 @@
 int main(void)
 {
 	/* var declaration */
-	int i, j, aux, count;
+	long int i, j, aux, count;
 
 	/* code */
 	i = 1;
 	j = 2;
-	printf("%d", i);
+	printf("%li", i);
 	count = 1;
 	while (count < 50)
 	{
-		printf(", %d", j);
+		printf(", %li", j);
 		count++;
 		aux = i + j;
 		i = j;

@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * sum_3_5- sums all the numbers multiple of 3 and 5 below 1024
+ * sum- sums all the numbers multiple of 3 and 5 below 1024
  *
  * Return: void
  */
-void sum_3_5(void)
+void sum(void)
 {
 	/* var declaration */
 	int i, j, sum;

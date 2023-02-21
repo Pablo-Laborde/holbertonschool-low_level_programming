@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* var declaration */
-	int i, j, sum;
+	int i, sum;
 
 	/* code */
 	sum = 0;

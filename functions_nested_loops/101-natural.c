@@ -12,10 +12,9 @@ int main(void)
 
 	/* code */
 	sum = 0;
-	for (i = 3; i < 1024; i += 3)
-		sum += i;
-	for (j = 5; j < 1024; j += 5)
-		sum += j;
+	for (i = 1; i < 1024; i++)
+		if ((i % 3 == 0) || (i % 5 == 0))
+			sum += i;
 	printf("%d\n", sum);
 	return (0);
 }

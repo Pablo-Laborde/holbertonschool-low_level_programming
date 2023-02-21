@@ -17,4 +17,3 @@ int base_ten(int k);
 void print_times_table(int n);
 void print_num(int n);
 void print_comaspace(int n);
-void sum(void);

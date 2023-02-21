@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * sum- sums all the numbers multiple of 3 and 5 below 1024
+ * main- sums all the numbers multiple of 3 and 5 below 1024
  *
  * Return: void
  */
-void sum(void)
+int main(void)
 {
 	/* var declaration */
 	int i, j, sum;
@@ -18,4 +17,5 @@ void sum(void)
 	for (j = 5; j < 1024; j += 5)
 		sum += j;
 	printf("%d\n", sum);
+	return (0);
 }

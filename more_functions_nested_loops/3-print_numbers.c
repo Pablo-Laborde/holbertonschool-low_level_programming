@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_number- prints number
+ * print_numbers- prints number
  *
  * Return: void
  */
-void print_number(void)
+void print_numbers(void)
 {
 	/* var declaration */
 	char c;

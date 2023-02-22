@@ -13,7 +13,7 @@ int _isdigit(int c)
 	int flag;
 
 	/* code */
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 		flag = 1;
 	else
 		flag = 0;

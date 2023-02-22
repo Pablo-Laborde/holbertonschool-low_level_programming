@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_fizzbuzz- prints
+ * main- prints
  *
  * Return:
  */
-void print_fizzbuzz(void)
+void main(void)
 {
 	/* var declaration */
 	int i;

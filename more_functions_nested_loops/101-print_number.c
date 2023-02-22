@@ -19,7 +19,10 @@ void print_number(int n)
 	while (length > 0)
 	{
 		bt = base_ten(length - 1);
-		c = - 1 * (n / bt);
+		if (n < 0)
+			c = - 1 * (n / bt);
+		else
+			c = n / bt;
 		_putchar(c + '0');
 		n %= bt;
 		length--;

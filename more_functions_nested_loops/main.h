@@ -1,3 +1,5 @@
+typedef unsigned int uint;
+
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
@@ -10,5 +12,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
-int get_length(int n);
-int base_ten(int n);
+uint get_length(uint n);
+uint base_ten(uint n);

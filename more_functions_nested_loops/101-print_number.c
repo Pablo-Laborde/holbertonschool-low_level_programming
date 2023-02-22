@@ -1,5 +1,7 @@
 #include "main.h"
 
+typedef unsigned int uint;
+
 /**
  * print_number- prints
  *
@@ -10,20 +12,21 @@
 void print_number(int n)
 {
 	/* var declaration */
-	int length, bt;
+	uint k, length, bt;
 
 	/* code */
-	if (n < 0)
+	k = -1 * n;
+	if (k < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		k = n * -1;
 	}
-	length = get_length(n);
+	length = get_length(k);
 	while (length > 0)
 	{
 		bt = base_ten(length - 1);
-		_putchar((n / bt) + '0');
-		n %= bt;
+		_putchar((k / bt) + '0');
+		k %= bt;
 		length--;
 	}
 }
@@ -35,10 +38,10 @@ void print_number(int n)
  *
  * Return: length
  */
-int get_length(int n)
+uint get_length(uint n)
 {
 	/* var declaration */
-	int length;
+	uint length;
 
 	/* code */
 	length = 0;
@@ -57,7 +60,7 @@ int get_length(int n)
  *
  * Return: base ten
  */
-int base_ten(int n)
+uint base_ten(uint n)
 {
 	if (n == 0)
 		return (1);

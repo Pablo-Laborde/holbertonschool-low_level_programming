@@ -3,9 +3,9 @@
 /**
  * main- prints
  *
- * Return:
+ * Return: 0 always
  */
-void main(void)
+int main(void)
 {
 	/* var declaration */
 	int i;
@@ -22,4 +22,5 @@ void main(void)
 		printf("%d", i);
 	}
 	printf("\n");
+	return (0);
 }

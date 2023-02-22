@@ -10,7 +10,7 @@
 void print_number(int n)
 {
 	/* var declaration */
-	int length, bt;
+	int length, bt, c;
 
 	/* code */
 	if (k < 0)
@@ -19,7 +19,8 @@ void print_number(int n)
 	while (length > 0)
 	{
 		bt = base_ten(length - 1);
-		_putchar((n / bt) + '0');
+		c = -1 * (n / bt);
+		_putchar(c + '0');
 		n %= bt;
 		length--;
 	}

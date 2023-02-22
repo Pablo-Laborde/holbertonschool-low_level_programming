@@ -13,7 +13,7 @@ void print_number(int n)
 	int length, bt, c;
 
 	/* code */
-	if (k < 0)
+	if (n < 0)
 		_putchar('-');
 	length = get_length(n);
 	while (length > 0)

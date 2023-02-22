@@ -20,7 +20,7 @@ void print_number(int n)
 	{
 		bt = base_ten(length - 1);
 		if (n < 0)
-			c = - 1 * (n / bt);
+			c = -1 * (n / bt);
 		else
 			c = n / bt;
 		_putchar(c + '0');
@@ -30,7 +30,7 @@ void print_number(int n)
 }
 
 /**
- * length- calculates the length
+ * get_length- calculates the length
  *
  * @n: input
  *

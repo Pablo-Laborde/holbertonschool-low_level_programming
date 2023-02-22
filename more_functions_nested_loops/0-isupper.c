@@ -13,7 +13,7 @@ int _isupper(int c)
 	int flag;
 
 	/* code */
-	if (c >= 'A' || c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		flag = 1;
 	else
 		flag = 0;

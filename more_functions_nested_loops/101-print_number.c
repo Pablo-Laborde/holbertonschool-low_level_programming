@@ -18,7 +18,7 @@ void print_number(int n)
 		_putchar('-');
 		n *= -1;
 	}
-	length = length(n);
+	length = get_length(n);
 	while (length > 0)
 	{
 		bt = base_ten(length - 1);
@@ -35,7 +35,7 @@ void print_number(int n)
  *
  * Return: length
  */
-int length(int n)
+int get_length(int n)
 {
 	/* var declaration */
 	int length;

@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* var declaration */
-	unsigned int i, j, aux;
+	unsigned long int i, j, aux;
 	int counter;
 
 	/* code */

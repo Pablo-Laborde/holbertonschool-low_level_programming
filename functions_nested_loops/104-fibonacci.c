@@ -8,17 +8,17 @@
 int main(void)
 {
 	/* var declaration */
-	int64_t i, j, aux;
+	unsigned int i, j, aux;
 	int counter;
 
 	/* code */
 	i = 1;
 	j = 2;
-	printf("%lli", i);
+	printf("%li", i);
 	counter = 1;
 	while (counter < 99)
 	{
-		printf(", %lli", j);
+		printf(", %li", j);
 		counter++;
 		aux = i + j;
 		i = j;

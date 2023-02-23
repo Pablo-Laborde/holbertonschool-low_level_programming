@@ -14,11 +14,11 @@ int main(void)
 	/* code */
 	i = 1;
 	j = 2;
-	printf("%li", i);
+	printf("%lu", i);
 	counter = 1;
 	while (counter < 99)
 	{
-		printf(", %li", j);
+		printf(", %lu", j);
 		counter++;
 		aux = i + j;
 		i = j;

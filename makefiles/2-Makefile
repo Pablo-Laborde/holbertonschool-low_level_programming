@@ -8,5 +8,5 @@ all: school $(OBJ)
 school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-$(OBJ): %.c
+$(OBJ):
 	$(CC) $(SRC) -c $< $@

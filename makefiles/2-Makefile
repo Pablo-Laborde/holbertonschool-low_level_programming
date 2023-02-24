@@ -11,4 +11,4 @@ school: $(OBJ)
 $(OBJ): $(SRC)
 	$(CC) $(SRC) -c
 
-$(SRC): $(SRC)
+$(SRC): m.h

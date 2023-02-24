@@ -10,3 +10,5 @@ school: $(OBJ)
 	
 $(OBJ): $(SRC)
 	$(CC) $(SRC) -c
+
+$(SRC): ./m.h

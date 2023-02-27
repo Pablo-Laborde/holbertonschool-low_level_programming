@@ -13,6 +13,7 @@ void rev_string(char *s)
 
 	/* code */
 	i = 0;
+	counter = 0;
 	while (s[i] != '\0')
 	{
 		counter++;
@@ -20,4 +21,5 @@ void rev_string(char *s)
 	}
 	for (j = (counter - 1); j >= 0; j--)
 		_putchar(s[j]);
+	_putchar('\n');
 }

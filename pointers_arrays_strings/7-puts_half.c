@@ -10,13 +10,14 @@
 void puts_half(char *str)
 {
 	/* var declaration */
-	int i, j;
+	int i, j, k;
 
 	/* code */
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	for (j = (i / 2); j < i; j++)
+	k = i - (i / 2);
+	for (j = k; j < i; j++)
 		_putchar(str[j]);
 	_putchar('\n');
 }

@@ -15,7 +15,7 @@ int _strlen(char *s)
 	/* code */
 	i = 0;
 	counter = 0;
-	while (s[i] != EOL)
+	while (s[i] != '\0')
 	{
 		counter++;
 		i++;

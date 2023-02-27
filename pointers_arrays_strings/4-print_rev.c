@@ -24,7 +24,7 @@ void print_rev_rec(char *s)
 {
 	if (s[0] != '\0')
 	{
-		print_rev_rec(&s[1]);
+		print_rev_rec(&(s[1]));
 		_putchar(s[0]);
 	}
 }

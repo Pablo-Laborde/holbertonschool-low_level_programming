@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	/* var declaration */
-	int i, j, counter;
+	int i, j, k;
 
 	/* code */
 	i = 0;
@@ -19,7 +19,10 @@ void rev_string(char *s)
 		counter++;
 		i++;
 	}
-	for (j = (counter - 1); j >= 0; j--)
-		_putchar(s[j]);
-	_putchar('\n');
+	for (j = 0; j < (i / 2); j++)
+	{
+		k = s[j];
+		s[j] = s[i - 1 - j];
+		s[i - 1 - j] = k;
+	}
 }

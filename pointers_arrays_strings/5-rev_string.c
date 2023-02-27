@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** rev_string- function
+/**
+ * rev_string- function
  *
  * @s: input
  *
@@ -13,7 +14,6 @@ void rev_string(char *s)
 
 	/* code */
 	i = 0;
-	counter = 0;
 	while (s[i] != '\0')
 	{
 		counter++;

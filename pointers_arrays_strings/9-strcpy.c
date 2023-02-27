@@ -16,13 +16,12 @@ char *_strcpy(char *dest, char *src)
 	/* code */
 	i = 0;
 	flag = 0;
-	if (*dest != NULL)
-		while (flag == 0)
-		{
-			if (src[i] == '\0')
-				flag = 1;
-			dest[i] = src[i];
-			i++;
-		}
+	while (flag == 0)
+	{
+		if (src[i] == '\0')
+			flag = 1;
+		dest[i] = src[i];
+		i++;
+	}
 	return (dest);
 }

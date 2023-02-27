@@ -15,10 +15,7 @@ void rev_string(char *s)
 	/* code */
 	i = 0;
 	while (s[i] != '\0')
-	{
-		counter++;
 		i++;
-	}
 	for (j = 0; j < (i / 2); j++)
 	{
 		k = s[j];

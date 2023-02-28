@@ -16,6 +16,7 @@ char *_strchr(char *s, char c)
 
 	/* code */
 	i = 0;
+	flag = 0;
 	while (flag == 0)
 	{
 		if ((s[i] != '\0') && (s[i] != c))

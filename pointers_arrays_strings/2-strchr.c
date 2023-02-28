@@ -25,7 +25,7 @@ char *_strchr(char *s, char c)
 			flag = 2;
 	}
 	if (flag == 2)
-		return (&(s[i]));
+		return (s + i);
 	else
 		return (NULL);
 }

@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** _strcat- function
+/**
+ * _strcat- function
  *
  * @dest: input1
  * @src: input2

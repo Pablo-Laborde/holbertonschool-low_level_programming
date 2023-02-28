@@ -19,18 +19,18 @@ int _atoi(char *s)
 	i = 0;
 	while (flag == 0)
 	{
-		if (str[i] == '\0')
+		if (s[i] == '\0')
 			flag = 1;
 		else
 		{
-			if (str[i] == '-')
+			if (s[i] == '-')
 				sign *= -1;
-			if ((str[i] >= '0') && (str[i] <= '9'))
+			if ((s[i] >= '0') && (s[i] <= '9'))
 			{
-				while ((str[i] >= '0') && (str[i] <= '9'))
+				while ((s[i] >= '0') && (s[i] <= '9'))
 				{
 					num *= 10;
-					num += (str[i] - 48);
+					num += (s[i] - 48);
 					i++;
 				}
 				flag = 1;

@@ -29,8 +29,16 @@ int _atoi(char *s)
 			{
 				while ((s[i] >= '0') && (s[i] <= '9'))
 				{
-					num *= 10;
-					num += (s[i] - 48);
+					if (sign == 1)
+					{
+						num *= 10;
+						num += (s[i] - 48);
+					}
+					else
+					{
+						num *= 10;
+						num -= (s[i] - 48);
+					}
 					i++;
 				}
 				flag = 1;
@@ -38,6 +46,5 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	num *= sign;
 	return (num);
 }

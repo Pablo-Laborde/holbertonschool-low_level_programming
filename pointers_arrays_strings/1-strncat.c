@@ -12,25 +12,20 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	/* var declaration */
-	int i, j, flag;
+	int i, j;
 
 	/* code */
 	i = 0;
 	j = 0;
-	flag = 0;
 	while (dest[i] != '\0')
 		i++;
-	while (flag == 0)
+	while ((src[j] != '\0') && (j < n))
 	{
-		if (src[j] == '\0')
-			flag = 1;
-		if (j == n)
-			flag = 2;
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
-	if (flag == 2)
+	if (j == n)
 		dest[i] = '\0';
 	return (dest);
 }

@@ -11,7 +11,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	/* var declaration */
-	int i, dif;
+	int i;
 
 	/* code */
 	i = 0;

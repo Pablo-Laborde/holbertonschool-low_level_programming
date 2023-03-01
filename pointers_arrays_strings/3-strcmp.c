@@ -11,22 +11,11 @@
 int _strcmp(char *s1, char *s2)
 {
 	/* var declaration */
-	int i, j, sum1, sum2;
+	int i, dif;
 
 	/* code */
 	i = 0;
-	j = 0;
-	sum1 = 0;
-	sum2 = 0;
-	while (s1[i] != '\0')
-	{
-		sum1 += s1[i];
+	while ((s1[i] != '\0') && (s2[i] != '\0') && (s1[i] == s2[i]))
 		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		sum2 += s2[j];
-		j++;
-	}
-	return (sum1 - sum2);
+	return (s1[i] - s2[i]);
 }

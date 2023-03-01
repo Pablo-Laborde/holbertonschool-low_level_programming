@@ -14,7 +14,7 @@ char *cap_string(char *c)
 
 	/* code */
 	i = 0;
-	if ((c[i] >= 'a') && (c <= 'z'))
+	if ((c[i] >= 'a') && (c[i] <= 'z'))
 	{
 		c[i] -= ('a' - 'A');
 		i++;

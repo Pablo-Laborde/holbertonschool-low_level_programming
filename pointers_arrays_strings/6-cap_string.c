@@ -18,7 +18,7 @@ char *cap_string(char *c)
 	{
 		c[i] -= ('a' - 'A');
 		i++;
-	
+	}
 	while (c[i] != '\0')
 	{
 		if ((c[i] == ' ') || (c[i] == '\t') || (c[i] == '\n') || (c[i] == ',')

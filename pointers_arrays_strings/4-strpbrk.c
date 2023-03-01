@@ -9,7 +9,7 @@
  *
  * Return: char*
  */
-char *_strpbrk(char *s; char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	/* var declaration */
 	int i, j, flag;

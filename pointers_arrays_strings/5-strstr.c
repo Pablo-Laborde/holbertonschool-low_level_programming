@@ -35,8 +35,10 @@ char *_strstr(char *haystack, char *needle)
 		else
 			i++;
 	}
-	if ((flag == 2) || (flag == 1))
+	if (flag == 2)
 		return (&(haystack[i]));
+	else if (flag == 1)
+		return (haystack);
 	else
 		return (NULL);
 }

@@ -14,6 +14,11 @@ char *cap_string(char *c)
 
 	/* code */
 	i = 0;
+	if ((c[i] >= 'a') && (c <= 'z'))
+	{
+		c[i] -= ('a' - 'A');
+		i++;
+	
 	while (c[i] != '\0')
 	{
 		if ((c[i] == ' ') || (c[i] == '\t') || (c[i] == '\n') || (c[i] == ',')

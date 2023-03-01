@@ -11,11 +11,10 @@ char *leet(char *c)
 {
 	/* var declaration */
 	int i, j;
-	char arr[8];
+	char arr[8] = {'o', 'l', '\0', 'e', 'a', '\0', '\0', 't'};
 
 	/* code */
 	i = 0;
-	arr[] = {'o', 'l', '\0', 'e', 'a', '\0', '\0', 't'};
 	while (c[i] != '\0')
 	{
 		for (j = 0; j < 8; j++)

@@ -23,6 +23,7 @@ char *_strstr(char *haystack, char *needle)
 			flag = 1;
 		if (haystack[i] == needle[0])
 		{
+			printf("hola");
 			k = 0;
 			while ((haystack[i + k] == needle[k]) && (haystack[i + k] != '\0')
 					&& (needle[k] != '\0'))

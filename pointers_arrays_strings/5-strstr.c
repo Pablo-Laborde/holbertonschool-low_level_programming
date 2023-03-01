@@ -12,7 +12,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	/* var declaration */
-	int i, j, k, flag;
+	int i, k, flag;
 
 	/* code */
 	i = 0;

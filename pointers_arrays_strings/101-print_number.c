@@ -25,7 +25,7 @@ void print_number(int n)
 	{
 		bt = base_ten(j);
 		if (n < 0)
-			_putchar((-n / bt) + '0');
+			_putchar((-1 * (n / bt)) + '0');
 		else
 			_putchar((n / bt) + '0');
 		n %= bt;

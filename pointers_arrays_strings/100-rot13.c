@@ -25,6 +25,7 @@ char *rot13(char *c)
 			if ((c[i] == ('z' + 1)) && (j < 13))
 				c[i] = c[i] - 26;
 		}
+		i++;
 	}
 	return (c);
 }

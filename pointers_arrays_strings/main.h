@@ -33,3 +33,4 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 /* advanced p2 */
 char *rot13(char *c);
+int base_ten(int len);

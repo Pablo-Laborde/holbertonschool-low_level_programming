@@ -35,3 +35,5 @@ void print_diagsums(int *a, int size);
 char *rot13(char *c);
 void print_number(int n);
 int base_ten(int len);
+/* advanced p3 */
+void set_string(char **s, char *to);

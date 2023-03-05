@@ -24,7 +24,10 @@ void print_number(int n)
 	for (j = (len - 1); j >= 0; j--)
 	{
 		bt = base_ten(j);
-		_putchar((n / bt) + '0');
+		if (n < 0)
+			_putchar((-n / bt) + '0');
+		else
+			_putchar((n / bt) + '0');
 		n %= bt;
 	}
 }

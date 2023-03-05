@@ -18,7 +18,7 @@ void print_number(int n)
 	do {
 		i /= 10;
 		len++;
-	} while (i > 0);
+	} while (i != 0);
 	if (n < 0)
 		_putchar('-');
 	for (j = (len - 1); j >= 0; j--)

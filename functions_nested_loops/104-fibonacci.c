@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* var declaration */
-	unsigned long int x, y, ax1, ax2, ax3, ay1, ay2, ay3;
+	long unsigned int x, y, ax1, ax2, ax3, ay1, ay2, ay3;
 	int counter;
 
 	/* code */

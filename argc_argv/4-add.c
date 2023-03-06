@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		flag = 0;
 		while ((i < argc) && (flag == 0))
 		{
-			if (argv[i] != '0')
+			if (argv[i][0] != '0')
 			{
 				aux = atoi(argv[1]);
 				if (aux != 0)

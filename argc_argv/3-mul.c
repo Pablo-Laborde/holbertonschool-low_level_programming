@@ -43,6 +43,7 @@ int to_int(char *num)
 	{
 		res *= 10;
 		res += num[i] + '0';
+		i++;
 	}
 	return (res);
 }

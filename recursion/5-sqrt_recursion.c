@@ -19,6 +19,14 @@ int _sqrt_recursion(int n)
 		return (_sqrt_recursion_aux(n, 2);
 }
 
+/**
+ * _sqrt_recursion_aux-function
+ *
+ * @n: input1
+ * @n: input2
+ *
+ * Return: int
+ */
 int _sqrt_recursion_aux(int n, int b)
 {
 	if ((b * b) == n)

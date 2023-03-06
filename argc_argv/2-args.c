@@ -16,6 +16,6 @@ int main(int argc, char **argv)
 
 	/* code */
 	for (i = 0; i < argc; i++)
-		printf("%s\n", argv[1]);
+		printf("%s\n", argv[i]);
 	return (0);
 }

@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
+		i = 1;
 		sum = 0;
 		flag = 0;
 		while ((i < argc) && (flag == 0))

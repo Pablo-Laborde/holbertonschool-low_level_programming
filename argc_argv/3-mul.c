@@ -18,32 +18,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("%d\n", to_int(argv[1]) * to_int(argv[2]));
+		printf("%d\n", atoi(argv[1] * atoi(argv[2]));
 		return (0);
 	}
-}
-
-/**
- * to_int- function
- *
- * @argc: input
- * @argv: input
- *
- * Return: always 0
- */
-int to_int(char *num)
-{
-	/* var declaration */
-	int i, res;
-
-	/* code */
-	i = 0;
-	res = 0;
-	while (num[i] != '\0')
-	{
-		res *= 10;
-		res += num[i] - '0';
-		i++;
-	}
-	return (res);
 }

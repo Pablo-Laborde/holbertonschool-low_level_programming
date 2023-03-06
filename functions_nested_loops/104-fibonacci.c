@@ -18,15 +18,15 @@ int main(void)
 	ay1 = 0;
 	ax2 = 0;
 	ay2 = 1;
-	printf("%llu", (ax1 * x + ay1 * y));
+	printf("%lld", (ax1 * x + ay1 * y));
 	printf(", ");
-	printf("%llu", (ax2 * x + ay2 * y));
+	printf("%lld", (ax2 * x + ay2 * y));
 	counter = 2;
 	while (counter < 99)
 	{
 		ax3 = ax1 + ax2;
 		ay3 = ay1 + ay2;
-		printf(", %llu", (ax3 * x + ay3 * y));
+		printf(", %lld", (ax3 * x + ay3 * y));
 		counter++;
 		ax1 = ax2;
 		ay1 = ay2;

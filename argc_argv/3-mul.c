@@ -42,7 +42,7 @@ int to_int(char *num)
 	while (num[i] != '\0')
 	{
 		res *= 10;
-		res += num[i] + '0';
+		res += num[i] - '0';
 		i++;
 	}
 	return (res);

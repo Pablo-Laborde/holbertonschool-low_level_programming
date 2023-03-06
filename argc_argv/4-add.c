@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		{
 			if (argv[i][0] != '0')
 			{
-				aux = atoi(argv[1]);
+				aux = atoi(argv[i]);
 				if (aux != 0)
 					sum += aux;
 				else

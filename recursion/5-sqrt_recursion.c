@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  * _sqrt_recursion_aux-function
  *
  * @n: input1
- * @n: input2
+ * @b: input2
  *
  * Return: int
  */

@@ -1,20 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Print to standar output a text given by the exercise.
- *
- * Return: 0 always
- */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}
-
-/** _puts- function
+ * _puts- function
  *
  * @s: input
  *
  * Return: void
  */
-void _puts(char *s);
+void _puts(char *s)
+{
+	/* var declaration */
+	int i;
+
+	/* code */
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar('\n');
+}

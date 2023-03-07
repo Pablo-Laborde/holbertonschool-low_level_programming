@@ -1,6 +1,20 @@
 CC = gcc
-SRC = *.c
-FLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all:
-	$(CC) -c $(FLAGS) $(SRC)
+all: $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ)
+
+clean:
+	$(RM) $(wildcard *~) $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean:
+	$(RM) $(wildcard *~) $(NAME) $(OBJ)
+
+re:
+	$(CC) $(CFLAGS) $(SRC) -c

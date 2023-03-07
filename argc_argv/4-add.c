@@ -31,6 +31,7 @@ int main(int argc, char **argv)
 			flag = int_check(argv[i]);
 			if (flag == 0)
 				sum += strtoint(argv[1]);
+			i++;
 		}
 		if (flag == 1)
 		{

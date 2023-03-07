@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		{
 			flag = int_check(argv[i]);
 			if (flag == 0)
-				sum += strtoint(argv[1]);
+				sum += strtoint(argv[i]);
 			i++;
 		}
 		if (flag == 1)
@@ -98,6 +98,7 @@ int strtoint(char *c)
 			sum += c[i];
 		else
 			sum -= c[i];
+		i++;
 	}
 	return (sum);
 }

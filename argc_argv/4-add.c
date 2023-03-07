@@ -13,7 +13,7 @@
 int main(int argc, char **argv)
 {
 	/* var declaration */
-	int i, aux, sum, flag;
+	int i, sum, flag;
 
 	/* code */
 	if (argc == 1)

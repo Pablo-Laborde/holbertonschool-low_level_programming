@@ -95,9 +95,9 @@ int strtoint(char *c)
 	{
 		sum *= 10;
 		if (sign == 1)
-			sum += c[i];
+			sum += (c[i] - '0');
 		else
-			sum -= c[i];
+			sum -= (c[i] - '0');
 		i++;
 	}
 	return (sum);

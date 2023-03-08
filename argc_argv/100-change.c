@@ -8,7 +8,7 @@
  * @argc: input
  * @argv: input
  *
- * Return:
+ * Return: int
  */
 int main(int argc, char **argv)
 {
@@ -23,19 +23,23 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		sum = 0;
 		n = atoi(argv[1]);
-		sum += (n / 25);
-		n %= 25;
-		sum += (n / 10);
-		n %= 10;
-		sum += (n / 5);
-		n %= 5;
-		sum += (n / 2);
-		n %= 2;
-		sum += (n / 1);
-		n %= 1;
-		printf("%d\n", n);
+		sum = 0;
+		if (n >= 0)
+		{
+			sum = 0;
+			sum += (n / 25);
+			n %= 25;
+			sum += (n / 10);
+			n %= 10;
+			sum += (n / 5);
+			n %= 5;
+			sum += (n / 2);
+			n %= 2;
+			sum += (n / 1);
+			n %= 1;
+		}
+		printf("%d\n", sum);
 		return (0);
 	}
 }

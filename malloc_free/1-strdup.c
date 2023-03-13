@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -15,6 +16,7 @@ char *_strdup(char *str)
 	char *string;
 
 	/* code */
+	ptinf("%d\n", sizeof(*str));
 	string = malloc(sizeof(*str));
 	if (string != NULL)
 	{

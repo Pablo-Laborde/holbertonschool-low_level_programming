@@ -22,19 +22,17 @@ char *str_concat(char *s1, char *s2)
 		i = 0;
 		j = 0;
 		if (s1 != NULL)
-		{
 			while (s1[i] != '\0')
 				i++;
-			string = malloc(i * sizeof(char));
-		}
-		else if (s2 != NULL)
-		{
+		if (s2 != NULL)
 			while (s2[j] != '\0')
 				j++;
-			string = malloc(j * sizeof(char));
-		}
-		else
+		if ((s1 != NULL) && (s2 != NULL))
 			string = malloc((i + j - 1) * sizeof(char));
+		else if (s2 != NULL)
+			string = malloc(i * sizeof(char));
+		else
+			string = malloc(j * sizeof(char));
 		if (string != NULL)
 		{
 			for (k = 0; k < i; k++)

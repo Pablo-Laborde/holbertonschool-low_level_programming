@@ -12,18 +12,19 @@
 char *_strdup(char *str)
 {
 	/* var declaration */
-	int i;
+	int i, j;
 	char *string;
 
 	/* code */
-	printf("%lu\n", sizeof(*str));
-	string = malloc(sizeof(*str));
-	if (string != NULL)
+	if (str != NULL)
 	{
 		i = 0;
 		while (str[i] != '\0')
-			string[i] = str[i];
-		string[i] = '\0';
+			i++;
+		string = malloc(i + 1);
+		if (string != NULL)
+			for (j = 0; j < (i + 1); j++)
+				string[j] = str[j];
 	}
 	return (string);
 }

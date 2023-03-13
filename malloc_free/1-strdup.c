@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	char *string;
 
 	/* code */
-	printf("%d\n", sizeof(*str));
+	printf("%lu\n", sizeof(*str));
 	string = malloc(sizeof(*str));
 	if (string != NULL)
 	{

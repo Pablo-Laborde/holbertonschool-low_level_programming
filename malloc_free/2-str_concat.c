@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	/* avr declaration */
-	int i, j, k, l, len;
+	int i, j, k, l;
 	char *string;
 
 	/* code */
@@ -27,7 +27,6 @@ char *str_concat(char *s1, char *s2)
 		if (s2 != NULL)
 			while (s2[j] != '\0')
 				j++;
-		len = i + j + 1;
 		for (k = 0; k <= i; k++)
 			string[k] = s1[k];
 		for (l = 0; l <= j; l++)

@@ -13,6 +13,7 @@ int **alloc_grid(int width, int height)
 {
 	/* var declaration */
 	int i, j, flag;
+	int *aux;
 	int **grid;
 
 	/* code */
@@ -22,12 +23,18 @@ int **alloc_grid(int width, int height)
 		grid = malloc(width * sizeof(int *));
 		if (grid != NULL)
 		{
-			flag = 1;
 			for (i = 0; i < width; i++)
+				grid[i] = NULL;
+			flag = 1;
+			i = 0;
+			while ((i < width) && (flag == 1))
 			{
-				grid[i] = malloc(height * sizeof(int));
-				if (grid[i] == NULL)
+				aux = malloc(height * sizeof(int));
+				if (aux == NULL)
 					flag = 0;
+				else
+					grid[i] = aux;
+				i++;
 			}
 			if (flag == 0)
 			{

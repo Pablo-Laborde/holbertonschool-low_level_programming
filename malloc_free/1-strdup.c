@@ -11,12 +11,12 @@
 char *_strdup(char *str)
 {
 	/* var declaration */
-	int i ;
+	int i;
 	char *string;
 
 	/* code */
-	string = malloc(sizeof(str));
-	if (str[i] != NULL)
+	string = malloc(sizeof(*str));
+	if (string != NULL)
 	{
 		i = 0;
 		while (str[i] != '\0')

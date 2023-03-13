@@ -27,11 +27,15 @@ char *str_concat(char *s1, char *s2)
 		if (s2 != NULL)
 			while (s2[j] != '\0')
 				j++;
-		for (k = 0; k <= i; k++)
-			string[k] = s1[k];
-		for (l = 0; l <= j; l++)
-		       string[k + l] = s2[l];
-		string[k + l] = '\0';
+		string = malloc((i + j - 1) * sizeof(char));
+		if (string != NULL)
+		{
+			for (k = 0; k < i; k++)
+				string[k] = s1[k];
+			for (l = 0; l < j; l++)
+			       string[k + l] = s2[l];
+			string[k + l] = '\0';
+		}
 	}
 	return (string);
 }

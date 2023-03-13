@@ -12,7 +12,7 @@
 int **alloc_grid(int width, int height)
 {
 	/* var declaration */
-	int i, flag;
+	int i, j, flag;
 	int **grid;
 
 	/* code */

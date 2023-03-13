@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	/* var declaration */
 	int i, flag;
 	int **grid;
-	
+
 	/* code */
 	grid = NULL;
 	if ((width > 0) && (height > 0))

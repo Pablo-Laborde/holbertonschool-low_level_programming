@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	if (size > 0)
 	{
 		string = malloc(size * sizeof(c));
-		if (string !- NULL)
+		if (string != NULL)
 			for (i = 0; i < size; i++)
 				string[i] = c;
 	}

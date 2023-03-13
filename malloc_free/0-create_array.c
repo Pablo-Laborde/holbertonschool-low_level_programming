@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	/* var declaration */
-	int i;
+	unsigned int i;
 	char *string;
 
 	/* code */

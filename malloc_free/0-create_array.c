@@ -12,14 +12,15 @@
 char *create_array(unsigned int size, char c)
 {
 	/* var declaration */
+	int i;
 	char *string;
 
 	/* code */
 	if (size > 0)
 	{
 		string = malloc(size * sizeof(c));
-		string[0] = c;
-		string[1] = '\0';
+		for (i = 0; i < size; i++)
+			string[i] = c;
 	}
 	else
 		string = NULL;

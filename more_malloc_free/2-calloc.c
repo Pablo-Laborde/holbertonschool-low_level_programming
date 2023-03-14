@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	/* var declaration */
 	int i, len;
-	void *pointer;
+	char *pointer;
 
 	/* code */
 	pointer = NULL;

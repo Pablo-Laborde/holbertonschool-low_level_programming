@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	/* var declaration */
-	int i, j, k, l, len;
+	unsigned int i, j, k, l, len;
 	char *string;
 
 	/* code */

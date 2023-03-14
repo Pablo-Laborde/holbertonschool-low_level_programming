@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		pointer = malloc(len);
 		if (pointer != NULL)
 			for (i = 0; i < len; i++)
-				pointer[i] = '\0';
+				pointer[i] = 0;
 	}
 	return (pointer);
 }
